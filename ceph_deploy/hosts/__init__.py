@@ -66,8 +66,8 @@ def get(hostname,
     module.normalized_name = _normalized_distro_name(distro_name)
     module.normalized_release = _normalized_release(release)
     module.distro = module.normalized_name
-    module.is_el = module.normalized_name in ['redhat', 'centos', 'fedora', 'scientific', 'oracle', 'virtuozzo']
-    module.is_rpm = module.normalized_name in ['redhat', 'centos',
+    module.is_el = module.normalized_name in ['red hat', 'centos', 'fedora', 'scientific', 'oracle', 'virtuozzo']
+    module.is_rpm = module.normalized_name in ['red hat', 'centos',
                                                'fedora', 'scientific', 'suse', 'oracle', 'virtuozzo']
     module.is_deb = not module.is_rpm
     module.release = release
